@@ -14,7 +14,7 @@ class Basecampfire
     attr_accessor :filename, :guids
     
     def initialize(filename)
-      self.filename = filename
+      self.filename = File.dirname(__FILE__) + '/' + filename
       load_existing_file or initialize_guids
     end
     
@@ -46,7 +46,8 @@ class Basecampfire
     new
   end
 
-  def initialize(config_file = 'config.yml')
+  def initialize(config_file = nil)
+    config_file ||= File.dirname(__FILE__) + '/config.yml'
     read_config config_file
     initialize_cache
     login_campfire

@@ -10,4 +10,5 @@ campfire:
   password: YOUR_PASSWORD
   room:     ROOM_TO_POST_TO
 
+# Relative to the main script
 cache_file: cached_guids.yml
