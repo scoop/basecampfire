@@ -1,0 +1,13 @@
+---
+basecamp:
+  rss_uri:  http://YOURDOMAIN.projectpath.com/projects/PROJECT_ID/feed/recent_items_rss
+  login:    USERNAME_OR_OPENID
+  password: YOUR_PASSWORD
+
+campfire:
+  domain:   YOUR_DOMAIN_WITHOUT_CAMPFIRENOW_DOT_COM
+  email:    YOUR@EMAIL.COM
+  password: YOUR_PASSWORD
+  room:     ROOM_TO_POST_TO
+
+cache_file: cached_guids.yml
